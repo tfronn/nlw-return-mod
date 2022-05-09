@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+body {
+  @apply antialiased dark:bg-zinc-900 dark:text-zinc-100 bg-zinc-50 text-zinc-800;
+}
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+input, textarea, button {
+  @apply font-normal;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+ @apply font-semibold;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+[disabled] {
+  @apply opacity-60 cursor-not-allowed;
+}
+}
+
+@layer utilities{
+.react-model-overlay {
+  @apply dark:bg-zinc-900 bg-zinc-200 bg-opacity-90 dark:bg-opacity-5 fixed top-0 bottom-0 right-0 left-0 flex items-center justify-center; 
+}
+
+ .deposit {
+ @apply text-greenDiv-500;
+}
+
+.withdraw {
+ @apply text-red-500;
+} 
+}
