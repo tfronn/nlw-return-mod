@@ -23,7 +23,7 @@ export function NewTransactionModal({
   const [type, setType] = useState('deposit')
 
   async function handleCreateNewTransaction(event: FormEvent) {
-    
+    event.preventDefault()
 
     await createTransaction({
       title,
