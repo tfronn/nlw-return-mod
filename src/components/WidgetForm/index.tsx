@@ -45,7 +45,7 @@ export function WidgetForm() {
   }
 
   return (
-    <div className="dark:bg-zinc-900 bg-white p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
+    <div className="dark:bg-zinc-900 bg-white p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto border border-zinc-200">
       { feedbackSent ? (
         <FeedbackSuccessStep onFeedbackRestartRequested={handleRestartFeedback} />
       ) : (

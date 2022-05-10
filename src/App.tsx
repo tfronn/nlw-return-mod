@@ -25,7 +25,6 @@ export function App() {
     <>
     <TransactionsProvider>
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} /> 
-      <DarkModeSwitch />
       <Dashboard />
       <NewTransactionModal
         isOpen={isNewTransactionModalOpen}
@@ -33,8 +32,10 @@ export function App() {
       />
 
       
-     
+    <div className="absolute w-full h-5 flex items-center justify-between pt-16 pb-2">
+      <DarkModeSwitch />
       <Widget />
+    </div>
     </TransactionsProvider>
       
     </>

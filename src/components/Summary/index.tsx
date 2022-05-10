@@ -26,13 +26,13 @@ export function Summary() {
   )
 
   return (
-    <div className="grid grid-cols-3 gap-8 -mt-40">
-      <div className="bg-white py-6 px-8 rounded-md text-title-500 dark:bg-zinc-800 dark:text-zinc-200">
+    <div className="grid grid-cols-3 md:gap-8 -mt-40 sm:gap-2">
+      <div className="bg-white py-6 px-8 rounded-md text-title-500 dark:bg-zinc-800 dark:text-zinc-200 drop-shadow-md">
         <header className="flex align-center justify-between">
-          <p className="font-semibold text-4xl">Entradas</p>
-          <img src={incomeImg} alt="Entradas" />
+          <p className="font-semibold md:text-3xl sm:text-sm">Entradas</p>
+          <img src={incomeImg} alt="Entradas" className="sm:h-6 sm:w-6 md:h-8 md:w-8" />
         </header>
-        <strong className="block mt-4 text-4xl font-medium leading-10 text-greenDiv-500">
+        <strong className="block mt-4 md:text-4xl sm:text-sm font-medium md:leading-10 text-greenDiv-500">
           {' '}
           {new Intl.NumberFormat('pt-BR', {
             style: 'currency',
@@ -40,12 +40,12 @@ export function Summary() {
           }).format(summary.deposits)}
         </strong>
       </div>
-      <div className="bg-white py-6 px-8 rounded-md text-title-500 dark:bg-zinc-800 dark:text-zinc-200">
+      <div className="bg-white py-6 px-8 rounded-md text-title-500 dark:bg-zinc-800 dark:text-zinc-200 drop-shadow-md">
         <header className="flex align-center justify-between">
-          <p className="font-semibold text-4xl">Saídas</p>
-          <img src={outcomeImg} alt="Saídas" />
+          <p className="font-semibold md:text-3xl sm:text-sm">Saídas</p>
+          <img src={outcomeImg} alt="Saídas" className="sm:h-6 sm:w-6 md:h-8 md:w-8" />
         </header>
-        <strong className="block mt-4 text-4xl font-medium leading-10 text-red-500">
+        <strong className="block mt-4 md:text-4xl sm:text-sm font-medium md:leading-10 text-red-500">
           -
           {new Intl.NumberFormat('pt-BR', {
             style: 'currency',
@@ -53,12 +53,12 @@ export function Summary() {
           }).format(summary.withdraws)}
         </strong>
       </div>
-      <div className="bg-brand-300 py-6 px-8 rounded-md text-white">
+      <div className="bg-brand-300 py-6 px-8 rounded-md text-white drop-shadow-md">
         <header className="flex align-center justify-between">
-          <p className="font-semibold text-4xl">Total</p>
-          <img src={totalImg} alt="Total" />
+          <p className="font-semibold md:text-3xl sm:text-sm">Total</p>
+          <img src={totalImg} alt="Total" className="sm:h-6 sm:w-6 md:h-8 md:w-8" />
         </header>
-        <strong className="block mt-4 text-4xl font-medium leading-10">
+        <strong className="block mt-4 md:text-4xl sm:text-sm font-medium md:leading-10 sm:leading-3">
           {new Intl.NumberFormat('pt-BR', {
             style: 'currency',
             currency: 'BRL'

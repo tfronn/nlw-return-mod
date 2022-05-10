@@ -49,9 +49,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
       createdAt: new Date()
     })
     const transactions = response.data
-    console.log(transactions)
     setTransactions(transactions)
-    console.log(transactions)
     return
   }
 
