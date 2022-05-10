@@ -32,7 +32,7 @@ export function App() {
       />
 
       
-    <div className="absolute bottom w-full h-5 flex items-center justify-between pt-16 pb-2">
+    <div className="relative w-full h-5 flex items-center justify-between pt-16 pb-2">
       <DarkModeSwitch />
       <Widget />
     </div>

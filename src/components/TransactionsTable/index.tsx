@@ -8,7 +8,7 @@ export function TransactionsTable() {
 
   return (
     
-    <div className="mt-16">
+    <div className="mt-16 overflow-scroll scrollbar-none">
       <table className="md:w-full border-separate border border-zinc-100 rounded-md drop-shadow-md dark:border-zinc-900">
         <thead>
           <tr className="first:text-zinc-800 dark:first:text-zinc-100 bg-zinc-50 dark:bg-zinc-800">
