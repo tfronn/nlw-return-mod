@@ -38,6 +38,9 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
     api
       .get('/transactions')
       .then(response => setTransactions(response.data.transactions))
+      .catch((err) => {
+        console.error('ops, ocorreu um erro' + err);
+      })
   }, [])
 
   async function createTransaction(transactionInput: TransactionInput) {
@@ -59,6 +62,6 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
 export function useTransactions() {
   const context = useContext(TransactionsContext)
-  console.log(context)
+  console.log(context.transactions)
   return context
 }
