@@ -48,9 +48,10 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
       ...transactionInput,
       createdAt: new Date()
     })
-    const { transaction } = response.data
-
-    setTransactions([...transactions, transaction])
+    const transactions = response.data
+    console.log(transactions)
+    setTransactions(transactions)
+    console.log(transactions)
     return
   }
 
@@ -63,6 +64,5 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
 export function useTransactions() {
   const context = useContext(TransactionsContext)
-  console.log(context.transactions)
   return context
 }
