@@ -13,7 +13,7 @@ interface Transaction {
   amount: number
   type: string
   category: string
-  createdAt: string
+  createdAt: Date
 }
 
 type TransactionInput = Omit<Transaction, 'id' | 'createdAt'>
@@ -36,7 +36,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
   useEffect(() => {
     api
-      .get('transactions')
+      .get('/transactions')
       .then(response => setTransactions(response.data.transactions))
   }, [])
 
