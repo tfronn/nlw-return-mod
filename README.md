@@ -1,4 +1,5 @@
 
+
   
 
 <div  align="center"  id="top">
@@ -351,93 +352,33 @@ Antes de começar :checkered_flag:, você precisa ter o [Git](https://git-scm.co
 
 ```bash
 
-  
-
-  
+Confira como configurar o server em https://github.com/tfronn/nlw-return-server-mod
 
 # 1- Clone este repositório
 
-  
 
-  
-
-$ git clone https://github.com/tfronn/nlw-return
-
-  
-
+$ git clone https://github.com/tfronn/nlw-return-mod
   
 
 # 2- Entre na pasta
-
   
 
-  
+$ cd nlw-return-mod
 
-$ cd nlw-return
 
-  
-
-  
-
-# 3- Inicie o servidor entrando na pasta
-
-  
-
-  
-
-$ cd server
-
-  
-
-  
-
-# 4- Instale as dependências
-
-  
-
-  
+# 3- Instale as dependências
+ 
 
 $ yarn
-
   
 
-  
+# 4- Para iniciar a aplicação  
 
-# 5- Para iniciar o servidor
-
-  
-
-  
 
 $ yarn dev
-
-  
-
-  
-
-# 6- Em um novo terminal navegue até a aplicação Web
-
-  
-
-  
-
-$ cd web
-
-  
-
-  
-
-# Repita os passos 4 e 5
-
-  
-
   
 
 # O app vai inicializar em <http://localhost:3000>
-
-  
-
-  
 
 ```
 
